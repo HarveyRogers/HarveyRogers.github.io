@@ -1,22 +1,12 @@
-{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  
-  "description": "Global CO2 Concentration by year into decade",
-  
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "data/co2-concentration.csv",
-    "format": {"type: "csv"}},
-    
-  "title": {
-    "text": "Atmospheric Carbon Dioxide: ",
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
-    "anchor": "start",
-    "color": "black"},
-  
-    "width": 800,
-    "height": 500,
-    
-    "transform": [
+    "format": {"parse": {"Date": "utc:'%Y-%m-%d'"}}
+  },
+  "width": 800,
+  "height": 500,
+  "transform": [
     {"calculate": "year(datum.Date)", "as": "year"},
     {"calculate": "floor(datum.year / 10)", "as": "decade"},
     {
