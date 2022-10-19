@@ -27,6 +27,7 @@
     <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
         
+        <h2>Week 1.</h2>
         <h3>Greenhouse Gas Emissions</h3>
         <p>The first chart shows greenhouse gas emissions by food production.</p>
         <div class="chart" id="Chart1"></div>
@@ -34,7 +35,10 @@
         <h3>UK Bank Rates</h3>
         <p>My second chart looks at UK bank rates from 1975-2020</p>
         <div class="chart" id="Chart2"> </div>
-    </div> 
+    
+        <h2>Week 2.</h2>
+        <p>My This chart looks at IMF Lending</p>
+        <div class="chart" id=Chart3"></div>
 </body>
 
 
@@ -42,10 +46,12 @@
     //Define charts:
     var myChart1 = "Chart_1_greenhouse_gas_emissions";
     var myChart2 = "chart_2_UK_bank_rate";
+    var myChart3 = "IMF_Lending"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);                           
 </script>
 
 </html>
