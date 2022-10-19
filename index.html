@@ -37,8 +37,11 @@
         <div class="chart" id="Chart2"> </div>
     
         <h2>Week 2</h2>
-        <p>This chart looks at IMF Lending</p>
+        <p>This chart looks at IMF lending</p>
         <div class="chart" id="Chart3"></div>
+        
+        <p>This chart looks at IMF lending, this time accounting for GDP</p>
+        <div class="chart" id="Chart4"></div>
 </body>
 
 
@@ -47,11 +50,14 @@
     var myChart1 = "Chart_1_greenhouse_gas_emissions";
     var myChart2 = "chart_2_UK_bank_rate";
     var myChart3 = "IMF_Lending.json";
+    var myChart4 = ""
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
-    vegaEmbed('#Chart3', myChart3);                           
+    vegaEmbed('#Chart3', myChart3);  
+    vegaEmbed('#Chart4', myChart4):
+    
 </script>
 
 </html>
