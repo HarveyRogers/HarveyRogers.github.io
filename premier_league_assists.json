@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Most Assists in Premier League History",
+      "subtitle": "Top 20 Highest Assists in Premier League",
+    },
+    "description": "Highest Number of Assists in Premier League History",
+    "data": {
+      "values": [{"Player": "Ryan Giggs", "Assists": 162}, {"Player": "Cesc F\u00e0bregas", "Assists": 111}, {"Player": "Wayne Rooney", "Assists": 103}, {"Player": "Frank Lampard", "Assists": 102}, {"Player": "Kevin De Bruyne", "Assists": 95}, {"Player": "Dennis Bergkamp", "Assists": 94}, {"Player": "David Silva", "Assists": 93}, {"Player": "Steven Gerrard", "Assists": 92}, {"Player": "James Milner", "Assists": 87}, {"Player": "David Beckham", "Assists": 80}, {"Player": "Teddy Sheringham", "Assists": 76}, {"Player": "Thierry Henry", "Assists": 74}, {"Player": "Andrew Cole", "Assists": 73}, {"Player": "Ashley Young", "Assists": 71}, {"Player": "Christian Eriksen", "Assists": 69}, {"Player": "Darren Anderton", "Assists": 68}, {"Player": "Alan Shearer", "Assists": 64}, {"Player": "Matthew Le Tissier", "Assists": 63}, {"Player": "Nolberto Solano", "Assists": 62}]
+    },
+  
+    "height": 300,
+    "width": 300,
+    "mark": "bar",
+    "colour": "rgb(0,47,167)",
+    
+    "encoding": {
+      "x": {"field": "Assists", "type": "quantitative", "axis": {"labelAngle": 0}},
+      "y": {"field": "Player", "type": "ordinal", "sort": "-x"}
+    }
+  }
