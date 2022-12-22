@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "South America",
+    "subtitle": ["Crime Index by Country"],
+    "subtitleFontSize": 12,
+    "anchor": "middle"
+  },
+  "width": 300,
+  "height": 375,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/south_america_topojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "transform": [
+    {
+      "lookup": "properties.subunit",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/south_america_crime.csv"
+        },
+        "key": "Country",
+        "fields": ["Crime Index"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.75},
+  "encoding": {
+    "color": {
+      "field": "Crime Index",
+      "legend": {"title": null, "orient": "right", "direction": "vertical"},
+      "type": "quantitative",
+      "scale": {"scheme": "oranges", "reverse": false}
+    },
+    "tooltip": [
+      {"field": "properties.subunit", "title": "Country"},
+      {"field": "Crime Index", "title": "Crime Index"}
+    ]
+  },
+  "config": {}
+}
