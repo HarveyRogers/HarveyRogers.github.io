@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "South America",
+    "subtitle": ["Base Map"],
+    "subtitleFontSize": 12,
+    "anchor": "middle"
+  },
+  "width": 300,
+  "height": 375,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/south_america_topojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "fill": "black",
+    "stroke": "white",
+    "strokeWidth": 0.75
+  },
+  "encoding": {"tooltip": {"field": "properties.subunit"}},
+  "config": {}
+}
