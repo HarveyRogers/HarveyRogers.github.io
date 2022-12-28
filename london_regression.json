@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Various US measures state by state",
+  "title": {
+    "text": "Knife Offences and Income - London Boroughs",
+    "subtitle": "median weekly income in £ (x), and knife offences per 1000 population (y)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/london_regression.csv"
+  },
+  "height": 300,
+  "width": 330,
+  "layer": [
+    {
+      "mark": {"type": "circle", "color": "green", "size": 100},
+      "encoding": {
+        "x": {
+          "field": "weekly_income",
+          "type": "quantitative",
+          "scale": {"domain": [500, 800]},
+          "title": null
+        },
+        "y": {
+          "field": "knife_offences_per_1000",
+          "type": "quantitative",
+          "scale": {"domain": [0, 2.5]},
+          "title": null
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "grey"},
+      "transform": [
+        {"regression": "knife_offences_per_1000", "on": "weekly_income"}
+      ],
+      "encoding": {
+        "x": {"field": "weekly_income", "type": "quantitative"},
+        "y": {"field": "knife_offences_per_1000", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {}
+}
