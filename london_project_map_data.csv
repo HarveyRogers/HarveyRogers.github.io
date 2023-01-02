@@ -1,0 +1,386 @@
+﻿Year,Borough,Crimes
+2010,Barking and Dagenham,14606
+2011,Barking and Dagenham,21572
+2012,Barking and Dagenham,17366
+2013,Barking and Dagenham,16537
+2014,Barking and Dagenham,16230
+2015,Barking and Dagenham,17191
+2016,Barking and Dagenham,16355
+2017,Barking and Dagenham,18695
+2018,Barking and Dagenham,18309
+2019,Barking and Dagenham,20205
+2020,Barking and Dagenham,16066
+2021,Barking and Dagenham,19898
+2010,Barnet,19147
+2011,Barnet,30484
+2012,Barnet,25668
+2013,Barnet,23219
+2014,Barnet,23036
+2015,Barnet,24626
+2016,Barnet,23674
+2017,Barnet,27002
+2018,Barnet,28298
+2019,Barnet,31617
+2020,Barnet,22863
+2021,Barnet,27155
+2010,Bexley,10574
+2011,Bexley,14520
+2012,Bexley,12365
+2013,Bexley,11916
+2014,Bexley,12206
+2015,Bexley,12347
+2016,Bexley,12288
+2017,Bexley,14831
+2018,Bexley,15386
+2019,Bexley,18082
+2020,Bexley,13090
+2021,Bexley,15002
+2022,Bexley,13440
+2010,Brent,22257
+2011,Brent,35890
+2012,Brent,28619
+2013,Brent,24691
+2014,Brent,25212
+2015,Brent,25630
+2016,Brent,25498
+2017,Brent,29771
+2018,Brent,30824
+2019,Brent,30487
+2020,Brent,24233
+2021,Brent,28186
+2010,Bromley,16460
+2011,Bromley,25626
+2012,Bromley,20657
+2013,Bromley,19488
+2014,Bromley,20186
+2015,Bromley,21100
+2016,Bromley,19004
+2017,Bromley,22792
+2018,Bromley,23237
+2019,Bromley,25220
+2020,Bromley,18510
+2021,Bromley,22507
+2010,Camden,25573
+2011,Camden,41933
+2012,Camden,33684
+2013,Camden,29305
+2014,Camden,27939
+2015,Camden,30345
+2016,Camden,27796
+2017,Camden,37957
+2018,Camden,35670
+2019,Camden,39835
+2020,Camden,25424
+2021,Camden,28178
+2010,Croyden,24338
+2011,Croyden,37589
+2012,Croyden,32415
+2013,Croyden,28453
+2014,Croyden,28349
+2015,Croyden,29339
+2016,Croyden,27925
+2017,Croyden,30599
+2018,Croyden,31060
+2019,Croyden,33912
+2020,Croyden,28279
+2021,Croyden,33222
+2010,Ealing,26878
+2011,Ealing,38412
+2012,Ealing,30990
+2013,Ealing,26738
+2014,Ealing,25717
+2015,Ealing,27010
+2016,Ealing,25824
+2017,Ealing,28360
+2018,Ealing,28334
+2019,Ealing,31865
+2020,Ealing,24791
+2021,Ealing,29261
+2010,Enfield,17521
+2011,Enfield,27282
+2012,Enfield,22667
+2013,Enfield,22368
+2014,Enfield,22415
+2015,Enfield,22844
+2016,Enfield,21536
+2017,Enfield,25235
+2018,Enfield,28018
+2019,Enfield,30614
+2020,Enfield,24118
+2021,Enfield,29130
+2010,Greenwich,18433
+2011,Greenwich,26556
+2012,Greenwich,21495
+2013,Greenwich,19745
+2014,Greenwich,20626
+2015,Greenwich,21621
+2016,Greenwich,21653
+2017,Greenwich,25531
+2018,Greenwich,25724
+2019,Greenwich,28913
+2020,Greenwich,21737
+2021,Greenwich,26798
+2010,Hackney,21205
+2011,Hackney,31709
+2012,Hackney,28575
+2013,Hackney,26297
+2014,Hackney,25201
+2015,Hackney,27296
+2016,Hackney,27010
+2017,Hackney,31841
+2018,Hackney,31280
+2019,Hackney,34508
+2020,Hackney,25835
+2021,Hackney,31006
+2010,Hammersmith and Fulham,18332
+2011,Hammersmith and Fulham,27592
+2012,Hammersmith and Fulham,22556
+2013,Hammersmith and Fulham,19348
+2014,Hammersmith and Fulham,19745
+2015,Hammersmith and Fulham,20468
+2016,Hammersmith and Fulham,19256
+2017,Hammersmith and Fulham,21726
+2018,Hammersmith and Fulham,22130
+2019,Hammersmith and Fulham,23879
+2020,Hammersmith and Fulham,16271
+2021,Hammersmith and Fulham,20517
+2010,Haringey,18701
+2011,Haringey,29212
+2012,Haringey,24791
+2013,Haringey,21480
+2014,Haringey,23551
+2015,Haringey,25481
+2016,Haringey,26202
+2017,Haringey,30348
+2018,Haringey,31059
+2019,Haringey,32487
+2020,Haringey,24064
+2021,Haringey,29147
+2010,Harrow,11484
+2011,Harrow,16277
+2012,Harrow,13819
+2013,Harrow,12444
+2014,Harrow,12303
+2015,Harrow,12994
+2016,Harrow,12506
+2017,Harrow,13961
+2018,Harrow,14907
+2019,Harrow,17389
+2020,Harrow,13249
+2021,Harrow,15653
+2010,Havering,13057
+2011,Havering,20226
+2012,Havering,16835
+2013,Havering,15483
+2014,Havering,15348
+2015,Havering,16387
+2016,Havering,16127
+2017,Havering,18972
+2018,Havering,18712
+2019,Havering,19211
+2020,Havering,14179
+2021,Havering,17144
+2010,Hillingdon,17668
+2011,Hillingdon,27781
+2012,Hillingdon,21579
+2013,Hillingdon,19118
+2014,Hillingdon,21632
+2015,Hillingdon,21990
+2016,Hillingdon,20934
+2017,Hillingdon,24784
+2018,Hillingdon,25067
+2019,Hillingdon,27469
+2020,Hillingdon,21044
+2021,Hillingdon,23446
+2010,Hounslow,18089
+2011,Hounslow,27840
+2012,Hounslow,23824
+2013,Hounslow,20024
+2014,Hounslow,20365
+2015,Hounslow,21798
+2016,Hounslow,21145
+2017,Hounslow,24896
+2018,Hounslow,25491
+2019,Hounslow,27008
+2020,Hounslow,20712
+2021,Hounslow,23611
+2010,Islington,21151
+2011,Islington,32012
+2012,Islington,28021
+2013,Islington,24691
+2014,Islington,25694
+2015,Islington,28184
+2016,Islington,25470
+2017,Islington,32218
+2018,Islington,28804
+2019,Islington,30431
+2020,Islington,21634
+2021,Islington,24962
+2010,Kensington and Chelsea,16222
+2011,Kensington and Chelsea,23791
+2012,Kensington and Chelsea,21365
+2013,Kensington and Chelsea,18411
+2014,Kensington and Chelsea,18460
+2015,Kensington and Chelsea,19718
+2016,Kensington and Chelsea,18713
+2017,Kensington and Chelsea,21523
+2018,Kensington and Chelsea,22080
+2019,Kensington and Chelsea,25265
+2020,Kensington and Chelsea,15201
+2021,Kensington and Chelsea,18391
+2010,Kingston upon Thames,8499
+2011,Kingston upon Thames,12862
+2012,Kingston upon Thames,10603
+2013,Kingston upon Thames,9470
+2014,Kingston upon Thames,9582
+2015,Kingston upon Thames,10089
+2016,Kingston upon Thames,9538
+2017,Kingston upon Thames,11493
+2018,Kingston upon Thames,12386
+2019,Kingston upon Thames,13235
+2020,Kingston upon Thames,9624
+2021,Kingston upon Thames,11841
+2010,Lambeth,26899
+2011,Lambeth,42474
+2012,Lambeth,35922
+2013,Lambeth,33067
+2014,Lambeth,33093
+2015,Lambeth,34538
+2016,Lambeth,32711
+2017,Lambeth,35001
+2018,Lambeth,35116
+2019,Lambeth,36315
+2020,Lambeth,26291
+2021,Lambeth,32287
+2010,Lewisham,21678
+2011,Lewisham,32417
+2012,Lewisham,25328
+2013,Lewisham,22885
+2014,Lewisham,21842
+2015,Lewisham,24289
+2016,Lewisham,22885
+2017,Lewisham,25134
+2018,Lewisham,26121
+2019,Lewisham,29196
+2020,Lewisham,18054
+2021,Lewisham,26892
+2010,Merton,10981
+2011,Merton,16732
+2012,Merton,13692
+2013,Merton,12005
+2014,Merton,11914
+2015,Merton,12659
+2016,Merton,12173
+2017,Merton,13810
+2018,Merton,13831
+2019,Merton,14531
+2020,Merton,11500
+2021,Merton,12926
+2010,Newham,26440
+2011,Newham,37417
+2012,Newham,32748
+2013,Newham,28601
+2014,Newham,28826
+2015,Newham,30279
+2016,Newham,28719
+2017,Newham,34577
+2018,Newham,36074
+2019,Newham,36343
+2020,Newham,27651
+2021,Newham,34235
+2010,Redbridge,18003
+2011,Redbridge,28935
+2012,Redbridge,22917
+2013,Redbridge,20461
+2014,Redbridge,20317
+2015,Redbridge,19562
+2016,Redbridge,18685
+2017,Redbridge,23456
+2018,Redbridge,23571
+2019,Redbridge,24190
+2020,Redbridge,19373
+2021,Redbridge,24132
+2010,Richmond upon Thames,8924
+2011,Richmond upon Thames,17274
+2012,Richmond upon Thames,11923
+2013,Richmond upon Thames,10758
+2014,Richmond upon Thames,10717
+2015,Richmond upon Thames,10739
+2016,Richmond upon Thames,10593
+2017,Richmond upon Thames,13240
+2018,Richmond upon Thames,12718
+2019,Richmond upon Thames,12947
+2020,Richmond upon Thames,10375
+2021,Richmond upon Thames,11055
+2010,Southwark,27850
+2011,Southwark,40223
+2012,Southwark,32772
+2013,Southwark,32278
+2014,Southwark,29871
+2015,Southwark,31214
+2016,Southwark,30018
+2017,Southwark,34140
+2018,Southwark,35732
+2019,Southwark,40121
+2020,Southwark,27256
+2021,Southwark,31917
+2010,Sutton,9485
+2011,Sutton,13864
+2012,Sutton,11477
+2013,Sutton,10366
+2014,Sutton,10789
+2015,Sutton,10877
+2016,Sutton,10114
+2017,Sutton,12063
+2018,Sutton,12104
+2019,Sutton,13967
+2020,Sutton,10960
+2021,Sutton,12909
+2010,Tower Hamlets,21738
+2011,Tower Hamlets,33646
+2012,Tower Hamlets,11938
+2013,Tower Hamlets,27539
+2014,Tower Hamlets,26724
+2015,Tower Hamlets,28600
+2016,Tower Hamlets,28270
+2017,Tower Hamlets,32048
+2018,Tower Hamlets,33725
+2019,Tower Hamlets,35439
+2020,Tower Hamlets,26621
+2021,Tower Hamlets,33349
+2010,Waltham Forest,20956
+2011,Waltham Forest,29960
+2012,Waltham Forest,24445
+2013,Waltham Forest,22645
+2014,Waltham Forest,20891
+2015,Waltham Forest,21650
+2016,Waltham Forest,19744
+2017,Waltham Forest,22813
+2018,Waltham Forest,23713
+2019,Waltham Forest,24252
+2020,Waltham Forest,19880
+2021,Waltham Forest,22499
+2010,Wandsworth,19313
+2011,Wandsworth,27027
+2012,Wandsworth,26092
+2013,Wandsworth,23085
+2014,Wandsworth,22000
+2015,Wandsworth,23226
+2016,Wandsworth,22843
+2017,Wandsworth,25334
+2018,Wandsworth,25869
+2019,Wandsworth,26383
+2020,Wandsworth,20878
+2021,Wandsworth,25568
+2010,Westminster,48042
+2011,Westminster,76778
+2012,Westminster,63636
+2013,Westminster,55729
+2014,Westminster,49231
+2015,Westminster,49037
+2016,Westminster,46056
+2017,Westminster,57232
+2018,Westminster,63135
+2019,Westminster,83037
+2020,Westminster,42241
+2021,Westminster,51126
