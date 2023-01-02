@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "London Knife Offences vs Educational Attainment",
+    "subtitle": [
+      "Percentage Attainment of GSCE Grades 5-9 (x), Knife Offences per 1000 people (y). 2021 data",
+      "Size of points based on population density",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/london_crime_bubble_educ.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "circle", "color": "green", "opacity": 0.7},
+  "height": 300,
+  "width": 430,
+  "encoding": {
+    "x": {
+      "field": "gcse",
+      "type": "quantitative",
+      "scale": {"domain": [47, 73]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "y": {
+      "field": "knife_offences_per_1000",
+      "type": "quantitative",
+      "scale": {"domain": [0, 2.6]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "size": {
+      "field": "population_density",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {"range": [50, 1000]},
+      "legend": null
+    },
+    "mark": {
+      "type": "text",
+      "color": "firebrick",
+      "x": "width",
+      "align": "right",
+      "y": -5,
+      "fontSize": 15
+    },
+    "encoding": {"text": {"type": "ordinal", "field": "R2"}},
+    "tooltip": [
+      {"field": "borough", "type": "ordinal", "title": "Borough"},
+      {
+        "field": "knife_offences_per_1000",
+        "type": "quantitative",
+        "title": "Knife Offences per 1000 people",
+        "format": ".0f"
+      },
+      {
+        "field": "gcse",
+        "type": "quantitative",
+        "title": "GCSE grades 5-9(%)",
+        "format": ".2f"
+      },
+      {
+        "field": "population_density",
+        "type": "quantitative",
+        "title": "Population per square kilometer",
+        "format": ","
+      }
+    ]
+  }
+}
