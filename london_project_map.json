@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 300,
+  "title": {
+    "text": "London - Borough Map",
+    "subtitle": ["Total Crimes. Source: London Datastore"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/london_project_map_data.csv"
+  },
+  "params": [
+    {
+      "name": "year",
+      "value": 2010,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "Borough",
+      "from": {
+        "key": "properties.name",
+        "fields": ["properties", "type", "geometry"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/london_borough_geojson",
+          "format": {"property": "features"}
+        }
+      }
+    },
+    {"filter": "datum.Year==year"}
+  ],
+  "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 0.9},
+  "encoding": {
+    "color": {
+      "field": "Crimes",
+      "legend": {
+        "title": null,
+        "orient": "right",
+        "direction": "vertical",
+        "gradientLength": 275,
+        "tickCount": 5
+      },
+      "type": "quantitative",
+      "scale": {"scheme": "greens", "reverse": false, "domain": [5000, 40000]}
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "Borough"},
+      {"field": "Crimes", "title": "Crimes", "format": ".2f"}
+    ]
+  },
+  "config": {}
+}
