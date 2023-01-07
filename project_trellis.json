@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Violent Crimes by Borough",
+    "subtitle": "Total number of violent crimes in London boroughs between 2010-2018",
+    "subtitleFontStyle": "italic",
+    "fontSize": 20,
+    "subtitleFontSize": 15,
+    "subtitlePadding": 7,
+    "anchor": "start"
+  },
+  "width": 100,
+  "height": 100,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/project_trellis.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "facet": {
+      "field": "borough",
+      "title": "Borough",
+      "type": "nominal",
+      "columns": 4,
+      "header": {"titleFontSize": 13}
+    },
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"grid": true, "labelFontSize": 15, "gridColor": "#b2b9c5"}
+    },
+    "y": {
+      "field": "violent_crimes",
+      "type": "quantitative",
+      "title": "Violent Crimes",
+      "axis": {"grid": false, "labelFontSize": 13}
+    },
+    "color": {"value": "green"},
+    "tooltip": [
+      {"field": "violent_crimes", "type": "nominal", "title": "Violent Crimes"},
+      {"field": "year", "type": "temporal", "title": "Year"}
+    ]
+  },
+  "config": {}
+}
