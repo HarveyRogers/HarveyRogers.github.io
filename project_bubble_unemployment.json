@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "London Knife Offences vs Unemployment Rate",
+    "subtitle": [
+      "Percentage Unemployment Rate (x), Knife Offences per 1000 people (y). 2021 data",
+      "Size of points based on population density"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 430,
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/london_crime_bubble_educ.csv",
+    "format": {"type": "csv"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "circle", "color": "green", "opacity": 0.7},
+      "encoding": {
+        "x": {
+          "field": "unemployment_rate",
+          "type": "quantitative",
+          "scale": {"domain": [4, 8]},
+          "axis": {"grid": false},
+          "title": null
+        },
+        "y": {
+          "field": "knife_offences_per_1000",
+          "type": "quantitative",
+          "scale": {"domain": [0, 2.6]},
+          "axis": {"grid": false},
+          "title": null
+        },
+        "size": {
+          "field": "population_density",
+          "type": "quantitative",
+          "title": "Population Density",
+          "scale": {"range": [50, 1000]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "borough", "type": "ordinal", "title": "Borough"},
+          {
+            "field": "knife_offences_per_1000",
+            "type": "quantitative",
+            "title": "Knife Offences per 1000",
+            "format": ".0f"
+          },
+          {
+            "field": "unemployment_rate",
+            "type": "quantitative",
+            "title": "Unemployment Rate (%)",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "red"},
+      "transform": [
+        {"regression": "knife_offences_per_1000", "on": "unemployment_rate"}
+      ],
+      "encoding": {
+        "x": {"field": "unemployment_rate", "type": "quantitative"},
+        "y": {"field": "knife_offences_per_1000", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "knife_offences_per_1000",
+          "on": "unemployment_rate",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -4
+      },
+      "encoding": {"text": {"type": "ordinal", "field": "R2"}}
+    }
+  ]
+}
