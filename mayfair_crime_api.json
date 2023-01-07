@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Crime around Mayfair",
+    "subtitle": "Westminster crime (most recent month)",
+    "subtitleFontStyle": "italic",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 13
+  },
+  "data": {
+    "url": "https://data.police.uk/api/crimes-street/all-crime?lat=51.511627&lng=-0.147806"
+  },
+  "transform": [{"calculate": "1", "as": "crime"}],
+  "width": 350,
+  "height": 300,
+  "mark": {"type": "arc", "innerRadius": 100},
+  "encoding": {
+    "theta": {"aggregate": "sum", "field": "crime", "type": "quantitative"},
+    "color": {
+      "scale": {"scheme": "category10"},
+      "field": "category",
+      "type": "nominal",
+      "legend": {"orient": "right", "title": null, "labelFontSize": 11}
+    },
+    "strokeWidth": {"value": 0},
+    "tooltip": [{"field": "category", "type": "nominal"}]
+  },
+  "config": {}
+}
