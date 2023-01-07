@@ -1,0 +1,321 @@
+﻿borough,year,violent_crimes
+Barking and Dagenham,2010,3149
+Barking and Dagenham,2011,3647
+Barking and Dagenham,2012,3359
+Barking and Dagenham,2013,3453
+Barking and Dagenham,2014,4378
+Barking and Dagenham,2015,5077
+Barking and Dagenham,2016,5339
+Barking and Dagenham,2017,5334
+Barking and Dagenham,2018,5554
+Barking and Dagenham,2019,6169
+Barnet,2010,2873
+Barnet,2011,3609
+Barnet,2012,3390
+Barnet,2013,3632
+Barnet,2014,4784
+Barnet,2015,5688
+Barnet,2016,6152
+Barnet,2017,6336
+Barnet,2018,6622
+Barnet,2019,7375
+Bexley,2010,2048
+Bexley,2011,2441
+Bexley,2012,2400
+Bexley,2013,2360
+Bexley,2014,2886
+Bexley,2015,3324
+Bexley,2016,3809
+Bexley,2017,4147
+Bexley,2018,4338
+Bexley,2019,5309
+Brent,2010,4500
+Brent,2011,5834
+Brent,2012,5261
+Brent,2013,4961
+Brent,2014,6470
+Brent,2015,7055
+Brent,2016,7756
+Brent,2017,8296
+Brent,2018,8695
+Brent,2019,8765
+Bromley,2010,3023
+Bromley,2011,3890
+Bromley,2012,3537
+Bromley,2013,3507
+Bromley,2014,4506
+Bromley,2015,5297
+Bromley,2016,5375
+Bromley,2017,5923
+Bromley,2018,5985
+Bromley,2019,6530
+Camden,2010,3562
+Camden,2011,4581
+Camden,2012,4169
+Camden,2013,3717
+Camden,2014,4638
+Camden,2015,5790
+Camden,2016,6062
+Camden,2017,6541
+Camden,2018,6885
+Camden,2019,6652
+Croydon,2010,4405
+Croydon,2011,5998
+Croydon,2012,5856
+Croydon,2013,5406
+Croydon,2014,7120
+Croydon,2015,8459
+Croydon,2016,8812
+Croydon,2017,8786
+Croydon,2018,9214
+Croydon,2019,9831
+Ealing,2010,4981
+Ealing,2011,6034
+Ealing,2012,5955
+Ealing,2013,5295
+Ealing,2014,6199
+Ealing,2015,7399
+Ealing,2016,7853
+Ealing,2017,7903
+Ealing,2018,8195
+Ealing,2019,8614
+Enfield,2010,2853
+Enfield,2011,3717
+Enfield,2012,3805
+Enfield,2013,3898
+Enfield,2014,5058
+Enfield,2015,5746
+Enfield,2016,6251
+Enfield,2017,6497
+Enfield,2018,7050
+Enfield,2019,8008
+Greenwich,2010,3609
+Greenwich,2011,4467
+Greenwich,2012,4654
+Greenwich,2013,4384
+Greenwich,2014,5499
+Greenwich,2015,6458
+Greenwich,2016,7110
+Greenwich,2017,7370
+Greenwich,2018,7780
+Greenwich,2019,8216
+Hackney,2010,3899
+Hackney,2011,4606
+Hackney,2012,4949
+Hackney,2013,4873
+Hackney,2014,5880
+Hackney,2015,6831
+Hackney,2016,7206
+Hackney,2017,7632
+Hackney,2018,7689
+Hackney,2019,7767
+Hammersmith and Fulham,2010,2934
+Hammersmith and Fulham,2011,3416
+Hammersmith and Fulham,2012,3293
+Hammersmith and Fulham,2013,3095
+Hammersmith and Fulham,2014,3719
+Hammersmith and Fulham,2015,4401
+Hammersmith and Fulham,2016,4689
+Hammersmith and Fulham,2017,4814
+Hammersmith and Fulham,2018,5449
+Hammersmith and Fulham,2019,5656
+Haringey,2010,3291
+Haringey,2011,4214
+Haringey,2012,4240
+Haringey,2013,3957
+Haringey,2014,5326
+Haringey,2015,6367
+Haringey,2016,7124
+Haringey,2017,7543
+Haringey,2018,7859
+Haringey,2019,7621
+Harrow,2010,2210
+Harrow,2011,2550
+Harrow,2012,2632
+Harrow,2013,2658
+Harrow,2014,3006
+Harrow,2015,3615
+Harrow,2016,3771
+Harrow,2017,3978
+Harrow,2018,4296
+Harrow,2019,4693
+Havering,2010,2401
+Havering,2011,2826
+Havering,2012,2848
+Havering,2013,2760
+Havering,2014,3347
+Havering,2015,4249
+Havering,2016,5093
+Havering,2017,5066
+Havering,2018,5375
+Havering,2019,5469
+Hillingdon,2010,3807
+Hillingdon,2011,4698
+Hillingdon,2012,4273
+Hillingdon,2013,4126
+Hillingdon,2014,5475
+Hillingdon,2015,6061
+Hillingdon,2016,6351
+Hillingdon,2017,6435
+Hillingdon,2018,6719
+Hillingdon,2019,7397
+Hounslow,2010,3681
+Hounslow,2011,4559
+Hounslow,2012,4583
+Hounslow,2013,4268
+Hounslow,2014,4984
+Hounslow,2015,5972
+Hounslow,2016,6152
+Hounslow,2017,6653
+Hounslow,2018,7188
+Hounslow,2019,7624
+Islington,2010,3580
+Islington,2011,4017
+Islington,2012,4143
+Islington,2013,3957
+Islington,2014,5096
+Islington,2015,5833
+Islington,2016,6090
+Islington,2017,6229
+Islington,2018,6525
+Islington,2019,6393
+Kensington and Chelsea,2010,1901
+Kensington and Chelsea,2011,2384
+Kensington and Chelsea,2012,2231
+Kensington and Chelsea,2013,2110
+Kensington and Chelsea,2014,2891
+Kensington and Chelsea,2015,3449
+Kensington and Chelsea,2016,3451
+Kensington and Chelsea,2017,3865
+Kensington and Chelsea,2018,4165
+Kensington and Chelsea,2019,4255
+Kingston upon Thames,2010,1582
+Kingston upon Thames,2011,2009
+Kingston upon Thames,2012,1940
+Kingston upon Thames,2013,1749
+Kingston upon Thames,2014,1986
+Kingston upon Thames,2015,2509
+Kingston upon Thames,2016,2604
+Kingston upon Thames,2017,2895
+Kingston upon Thames,2018,3292
+Kingston upon Thames,2019,3484
+Lambeth,2010,4973
+Lambeth,2011,6128
+Lambeth,2012,5883
+Lambeth,2013,5706
+Lambeth,2014,7287
+Lambeth,2015,8404
+Lambeth,2016,8534
+Lambeth,2017,8633
+Lambeth,2018,8676
+Lambeth,2019,9244
+Lewisham,2010,4304
+Lewisham,2011,5400
+Lewisham,2012,4989
+Lewisham,2013,4973
+Lewisham,2014,5839
+Lewisham,2015,6954
+Lewisham,2016,7278
+Lewisham,2017,7552
+Lewisham,2018,7639
+Lewisham,2019,8506
+Merton,2010,1871
+Merton,2011,2137
+Merton,2012,2177
+Merton,2013,2079
+Merton,2014,2540
+Merton,2015,3251
+Merton,2016,3364
+Merton,2017,3585
+Merton,2018,3663
+Merton,2019,3961
+Newham,2010,4582
+Newham,2011,5501
+Newham,2012,5850
+Newham,2013,5453
+Newham,2014,6907
+Newham,2015,8079
+Newham,2016,8247
+Newham,2017,8758
+Newham,2018,9035
+Newham,2019,9243
+Redbridge,2010,2470
+Redbridge,2011,3045
+Redbridge,2012,3536
+Redbridge,2013,3671
+Redbridge,2014,4819
+Redbridge,2015,5062
+Redbridge,2016,5456
+Redbridge,2017,5711
+Redbridge,2018,6242
+Redbridge,2019,6312
+Richmond upon Thames,2010,1260
+Richmond upon Thames,2011,1593
+Richmond upon Thames,2012,1685
+Richmond upon Thames,2013,1552
+Richmond upon Thames,2014,1992
+Richmond upon Thames,2015,2321
+Richmond upon Thames,2016,2513
+Richmond upon Thames,2017,2748
+Richmond upon Thames,2018,2886
+Richmond upon Thames,2019,2962
+Southwark,2010,5257
+Southwark,2011,5771
+Southwark,2012,5507
+Southwark,2013,5278
+Southwark,2014,6471
+Southwark,2015,7317
+Southwark,2016,7712
+Southwark,2017,7814
+Southwark,2018,8688
+Southwark,2019,8976
+Sutton,2010,1540
+Sutton,2011,2099
+Sutton,2012,2328
+Sutton,2013,2044
+Sutton,2014,2670
+Sutton,2015,3137
+Sutton,2016,3115
+Sutton,2017,3511
+Sutton,2018,3617
+Sutton,2019,4241
+Tower Hamlets,2010,4273
+Tower Hamlets,2011,4874
+Tower Hamlets,2012,5607
+Tower Hamlets,2013,5381
+Tower Hamlets,2014,6389
+Tower Hamlets,2015,7340
+Tower Hamlets,2016,7682
+Tower Hamlets,2017,7873
+Tower Hamlets,2018,8603
+Tower Hamlets,2019,8663
+Waltham Forest,2010,3709
+Waltham Forest,2011,4472
+Waltham Forest,2012,4311
+Waltham Forest,2013,4474
+Waltham Forest,2014,5141
+Waltham Forest,2015,5784
+Waltham Forest,2016,6212
+Waltham Forest,2017,6019
+Waltham Forest,2018,6410
+Waltham Forest,2019,6139
+Wandsworth,2010,3375
+Wandsworth,2011,3547
+Wandsworth,2012,3485
+Wandsworth,2013,3391
+Wandsworth,2014,4548
+Wandsworth,2015,5688
+Wandsworth,2016,5633
+Wandsworth,2017,6094
+Wandsworth,2018,6652
+Wandsworth,2019,6659
+Westminster,2010,5403
+Westminster,2011,7116
+Westminster,2012,5958
+Westminster,2013,5619
+Westminster,2014,6946
+Westminster,2015,8080
+Westminster,2016,8657
+Westminster,2017,9874
+Westminster,2018,10248
+Westminster,2019,11118
