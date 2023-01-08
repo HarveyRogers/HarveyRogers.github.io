@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 330,
+  "height": 300,
+  "title": {
+    "text": "Knife Offences and Income - London Boroughs (without Westminster)",
+    "subtitle": "median weekly income in £ (x), and knife offences per 1000 population (y)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/london_regression_anomaly_corrected.csv"
+  },
+  "transform": [
+    {"filter": {"field": "weekly_income", "range": [500, 800]}},
+    {"filter": {"field": "knife_offences_per_1000", "range": [0, 2.5]}}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "circle", "color": "green", "size": 120, "filled": true},
+      "encoding": {
+        "x": {
+          "field": "weekly_income",
+          "type": "quantitative",
+          "axis": {"grid": false},
+          "scale": {"domain": [500, 800]}
+        },
+        "y": {
+          "field": "knife_offences_per_1000",
+          "type": "quantitative",
+          "axis": {"grid": false}
+        },
+        "tooltip": [
+          {"field": "borough", "title": "Borough"},
+          {
+            "field": "weekly_income",
+            "title": "Median Weekly Income",
+            "format": ".1f"
+          },
+          {
+            "field": "knife_offences_per_1000",
+            "title": "Knife Offences per 1000",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "firebrick"},
+      "transform": [
+        {"regression": "knife_offences_per_1000", "on": "weekly_income"}
+      ],
+      "encoding": {
+        "x": {"field": "weekly_income", "type": "quantitative", "title": null},
+        "y": {
+          "field": "knife_offences_per_1000",
+          "type": "quantitative",
+          "title": null,
+          "scale": {"domain": [0, 2.4]}
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "knife_offences_per_1000",
+          "on": "weekly_income",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ],
+  "config": {"view": {"stroke": "transparent"}}
+}
