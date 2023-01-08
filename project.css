@@ -1,0 +1,75 @@
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+    background-color: rgb(49, 43, 43);
+ 
+}
+.Header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:#fefefe;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px 10px 10px 10px;
+    max-width: 600px;
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1,h2, h3, p{
+    color:rgb(17, 17, 17);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+    
+.style{
+    margin: auto;
+    margin-top: 0px;
+    align-content: center;
+    max-width: 904px;
+    background-color: white;
+    padding: 20px;
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(24, 54, 66);
+}
+
+  
+
+
+.project_style{
+    margin: auto;
+    margin-top: 10px;
+    align-content: center;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(24, 54, 66);
+}
+
+
+/* Set the apperance of the class, chart */
+.chart{
+    align-items: center;
+    width:330px;
+    border-width: 2px;
+    border-style: transparent;
+    border-radius: 5px;
+    border-color: white;
+    margin-left: 1px;
+    margin-right: 220px;
+}
