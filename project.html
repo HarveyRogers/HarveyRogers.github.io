@@ -4,37 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <title>Project</title>
+    <link rel="stylesheet" href="project.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+   
 </head>
 <body>
-    <h1>Crime in London: A Sociological Study</h1>
+    <div class="Header">
+
+        <h1> Data Science for Economists </h1>
+        <h2> Harvey Rogers</h2>
+
+        <a href="index.html" id="link">Portfolio</a>
+        <a href="project.html" id="link">Project</a>
+        
+    </div>
+    
+    <div class = "Header">
+    <h1>Crime in London</h1>
+    <p>London has one of the highest crime rates of any city in the UK. Violent crime, in particular knife crime, is a major problem within the capital which seems to be getting worse. The aim of this project is to see the extent to which this is the case, illustrate the data relating to crime in London in a way that helps provide a clearer picture of the trends and characteristics of crime across areas of London, as well as attempting to find links between crime and other variables to help build the larger picture on the causes of crime.</p>
+    </div>
+
+    <div class = "project_style">
+    <h2>Total Violent Crimes</h2>
+    
      <div class="chart" id="Chart1"></div>
-     <div class="chart" id="Chart2"></div>
+     <p>Chart 1 uses data accessed directly from the London Datastore. The data was displayed in individual months, contained all crime types with multiple subsections as well as containing areas I did not want to use, so it required a lot of cleaning (this can be found on my <a href="https://colab.research.google.com/drive/15a8Jw5eggCtW5bQ39xEh1jsQWs6maM4z#scrollTo=EMY-8Dj11BaU" id="link_colab">Colab</a>).  I was unable to clean the data entirely into the format required for the chart, so it required a small amount of manual cleaning in excel at the end. The charts show an upward trend in violent crimes in every borough between 2010-2018, with areas such as Westminster and Croydon showing particularly steep increases.</p>
+     </div>
+
+    
+    <div class = "project_style">
+    <div class="chart" id="Chart2"></div>
+    <p>Chart 2 again uses data from the London Datastore, this time using all crimes to create a choropleth map of the London Boroughs. Since this map used the same data is required the same cleaning as chart 1, just slightly simpler as I didnt need to eliminate all but violent crimes. It shows a general increase in all crimes across the time period. A minor issue was that Westminsters crime is considerably higher than most other boroughs, making it difficult to select a proper scale range; so I treated Westminster as an anomaly, producing a scale that best displayed the differences between all other boroughs.</p>
+    </div>
+
+     <div class = "project_style">  
      <div class="chart" id="Chart3"></div>
      <div class="chart" id="Chart4"></div>
+     <p>Charts 3 and 4 regress knife offences on unemployment rate and educational attainment. Unexpectedly, the results showed a negative correlation between knife crime and unemployment rate. However, an R2  value of 0.18 suggests this is a low correlation. A similarly sized negative correlation was found between knife offences and GCSE attainment, with Westminster being somewhat of an outlier due to its very high knife crime but reasonably good GCSE attainment.</p>
+     </div>
+
+     <div class = "project_style">
      <div class="chart" id="Chart5"></div>
+     <p>Chart 5 uses London crime data scraped from Wikipedia and cleaned in colab, combined with data from other countries to create an international comparison of Londons homicide rates. Whilst chart 1 shows that overall violent crimes have increased over the last decade, Chart 5 shows a downwards trend in homicide rates from 1999-2018. Whilst still considerably lower than New Yorks rate, it has declined at a slower rate over the time period.</p>
+     </div>
+
+
+     <div class = "project_style">
      <div class="chart" id="Chart6"></div>
+     <p>Chart 6 once again runs a regression on knife offences, this time on income. The data was very clean so did not require much altering. Interestingly, this chart found almost no correlation between the variables. With a very small R2  value of 0.01. Westminster was again an anomaly, with high median weekly income and very high knife offences, therefore I removed it to give a better visualisation of the correlation. </p>
+    </div>
+    
+     <div class = "project_style">
      <div class="chart" id="Chart7"></div>
      <div class="chart" id="Chart8"></div>
-     <p>The data scraping can be found on my <a href="https://colab.research.google.com/drive/15a8Jw5eggCtW5bQ39xEh1jsQWs6maM4z#scrollTo=EMY-8Dj11BaU" id="link_colab">Colab</a>
-    
+     <p>Charts 7 and 8 uses a Metropolitan Police API to create automatically updating charts displaying the types of crimes recently committed in Mayfair, Westminster and South Richmond, Richmond upon Thames, in attempt to show the differences in types of crime committed in both high and low crime boroughs. The charts when made originally (January 2023) showed that Mayfair has a lower proportion of violent crimes in all crimes compared to South Richmond, which was unexpected as Westminster has the highest violent crime number of any borough. This may be caused by the specificity of the coordinates used for the API (shown in the URL), potentially failing to give a representative view of the borough as a whole. However, it may simply be due to the large overall number of crimes.</p>
+     </div>
+     
 
 
 </body>
     
 <script>
-    var myChart1 = "london_project_map.json";
-    var myChart2 = "project_bubble_unemployment.json";
-    var myChart3 = "project_education_bubble.json";
-    var myChart4 = "global_homicide_rates.json";
-    var myChart5 = "project_income.json";
-    var myChart6 = "mayfair_crime_api.json";
-    var myChart7 = "richmond_crime_api.json";
-    var myChart8 = "project_trellis.json";
-    
+    var myChart1 = "project_trellis.json";
+    var myChart2 = "london_project_map.json";
+    var myChart3 = "project_bubble_unemployment.json";
+    var myChart4 = "project_education_bubble.json";
+    var myChart5 = "global_homicide_rates.json";
+    var myChart6 = "project_income.json";
+    var myChart7 = "mayfair_crime_api.json";
+    var myChart8 = "richmond_crime_api.json";
     
     
 // Embed charts:
@@ -51,3 +93,4 @@
 </script>
 
 </html>
+
