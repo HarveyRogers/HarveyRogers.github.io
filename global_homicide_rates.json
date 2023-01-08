@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Homicide Rate Comparison - Global Cities",
+    "subtitle": ["homicide rate per 100,000 (y), year (x)"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/project_homicide_rates.csv"
+  },
+  "mark": "line",
+  "height": 300,
+  "width": 470,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {"grid": false},
+      "title": null
+    },
+    "y": {"field": "Homicide Rate", "type": "quantitative", "title": null}
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "scale": {"range": ["Darkred", "green", "orange"]}
+        }
+      },
+      "layer": [
+        {"mark": {"type": "line", "point": true}},
+        {"transform": [{"filter": {"selection": "hover"}}], "mark": "point"}
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        }
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ],
+  "config": {}
+}
