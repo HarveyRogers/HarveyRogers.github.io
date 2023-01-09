@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Crime around South Richmond",
+    "text": "Chart 8: Crime around South Richmond",
     "subtitle": "Richmond upon Thames crime (most recent month)",
     "subtitleFontStyle": "italic",
     "anchor": "start",
