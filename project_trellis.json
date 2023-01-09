@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Violent Crimes by Borough",
+    "text": "Chart 1 - Violent Crimes by Borough",
     "subtitle": "Total number of violent crimes in London boroughs between 2010-2018",
     "subtitleFontStyle": "italic",
     "fontSize": 20,
