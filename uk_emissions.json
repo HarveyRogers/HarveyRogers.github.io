@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK CO2 Emissions over GDP per Capita",
+    "subtitle": "year (x), CO2 emissions in tonnes over gdp per capita (y)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/uk_emissions.csv"
+  },
+  "height": 300,
+  "width": 500,
+  "mark": {"type": "line", "color": "darkblue"},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "ticks": false,
+        "labelAngle": 45,
+        "tickCount": 25
+      }
+    },
+    "y": {
+      "field": "emissions/gdp",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
