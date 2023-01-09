@@ -16,9 +16,11 @@
   "height": 300,
   "mark": {"type": "arc", "innerRadius": 100},
   "encoding": {
-    "theta": {"aggregate": "sum", "field": "crime", "type": "quantitative"},
+    "theta": {"aggregate": "sum", 
+              "field": "crime", 
+              "type": "quantitative"},
     "color": {
-      "scale": {"scheme": "category10"},
+      "scale": "category10",
       "field": "category",
       "type": "nominal",
       "legend": {"orient": "right", "title": null, "labelFontSize": 11}
