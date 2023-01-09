@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 350,
+  "height": 300,
+  "title": {
+    "text": "UK CO2 Emissions vs GDP per Capita",
+    "subtitle": "GDP per Capita in $ (x), and CO2 emissions in tonnes (y)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HarveyRogers/HarveyRogers.github.io/main/uk_emissions.csv"
+  },
+  "mark": {"type": "point", "color": "darkblue"},
+  "encoding": {
+    "x": {"field": "gdp_per_capita", "type": "quantitative", "title": null},
+    "y": {"field": "emissions", "type": "quantitative", "title": null}
+  },
+  "config": {}
+}
