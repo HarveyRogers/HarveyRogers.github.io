@@ -3,7 +3,7 @@
   "width": 450,
   "height": 300,
   "title": {
-    "text": "London - Borough Map",
+    "text": "Chart 2: London - Borough Map",
     "subtitle": ["Total Crimes. Source: London Datastore"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
