@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "London Knife Offences vs Educational Attainment",
+    "text": "Chart 4: London Knife Offences vs Educational Attainment",
     "subtitle": [
       "Percentage Attainment of GSCE Grades 5-9 (x), Knife Offences per 1000 people (y). 2021 data",
       "Size of points based on population density"
