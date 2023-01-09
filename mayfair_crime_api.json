@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Crime around Mayfair",
+    "text": "Chart 7: Crime around Mayfair",
     "subtitle": "Westminster crime (most recent month)",
     "subtitleFontStyle": "italic",
     "anchor": "start",
