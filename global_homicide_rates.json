@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Homicide Rate Comparison - Global Cities",
+    "text": "Chart 5: Homicide Rate Comparison - Global Cities",
     "subtitle": ["homicide rate per 100,000 (y), year (x)"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
