@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "London Knife Offences vs Unemployment Rate",
+    "text": "Chart 3: London Knife Offences vs Unemployment Rate",
     "subtitle": [
       "Percentage Unemployment Rate (x), Knife Offences per 1000 people (y). 2021 data",
       "Size of points based on population density"
