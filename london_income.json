@@ -3,7 +3,7 @@
   "width": 330,
   "height": 300,
   "title": {
-    "text": "Knife Offences and Income - London Boroughs (without Westminster)",
+    "text": "Knife Offences and Income - London Boroughs",
     "subtitle": "median weekly income in £ (x), and knife offences per 1000 population (y)",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
